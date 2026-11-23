@@ -321,14 +321,14 @@ fieldset {
 /* ----------------------------------------FOOOTER--------------------------------------------- */
 footer {
   background-color: #1a1e30;
-  height: 200px;
+  height: 220px;
   padding: 5%;
 }
 .footer-nav {
   display: flex;
   justify-content: center;
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
 }
 footer nav a {
   color: var(--color-bg);
@@ -339,7 +339,7 @@ footer p {
   margin: var(--spacing-sm);
   color: var(--color-bg);
   text-align: center;
-  margin: var(--spacing-xs) 0;
+  margin: var(--spacing-xl);
 }
 .heart {
   display: inline-block;
@@ -373,6 +373,25 @@ footer p {
   right: 0;
 }
 
+.darkModeToogle{
+  display: flex;
+  background-color: var(--color-bg);
+  border: none;
+  color: var(--color-texto);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.darkModeToogle:hover{
+  
+  transform: rotate(15deg);
+}
+.dark-mode-toggle svg{
+
+  display: block;
+}
 
 @media (max-width:1260px){
 nav {
@@ -436,7 +455,7 @@ nav {
   }
 
 }
-
+/* -----------------------------------------ABOUT--------------------------------- */
 .sectionExperience, .enfoqueList{
     display: flex;
     flex-direction: column;
