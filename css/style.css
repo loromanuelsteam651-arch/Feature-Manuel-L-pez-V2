@@ -373,6 +373,7 @@ footer p {
   right: 0;
 }
 
+
 .darkModeToogle{
   display: flex;
   background-color: var(--color-bg);
@@ -517,4 +518,14 @@ background-color: var(--color-bg);
 .enfoqueDato{
     font-style: normal;
     font-size: small;
+}
+
+/* -----------------------------------------DARKMODE-------------------------------- */
+body.dark-mode{
+  background-color: var(--color-texto); 
+  color: var(--color-bg);
+}
+body.dark-mode header{
+  background-color: var(--color-secundary);
+  color: var(--color-bg);
 }

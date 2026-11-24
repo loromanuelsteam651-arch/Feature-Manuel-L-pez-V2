@@ -17,3 +17,5 @@ document.addEventListener("click", (e) => {
   if (!menNav.contains(e.target) && !btnmenu.contains(e.target))
     menNav.classList.remove("abierto")
 })
+
+export default menu; 
