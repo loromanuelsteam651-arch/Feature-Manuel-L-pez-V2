@@ -1,6 +1,6 @@
 import darkmode from "./utils/darkmode.js"
 import menu from "./utils/menu.js"
-import {header, footer} from "./templates/templates.js"
+import {header, footer} from "./templates/templates.js";
 const mainHeader = document.querySelector("#mainHeader")
 const mainFooter = document.querySelector("#mainFooter")
 

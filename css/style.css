@@ -521,7 +521,7 @@ background-color: var(--color-bg);
 }
 
 /* -----------------------------------------DARKMODE-------------------------------- */
-body.dark-mode{
+body.dark-mode {
   background-color: var(--color-texto); 
   color: var(--color-bg);
 }
