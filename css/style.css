@@ -529,3 +529,36 @@ body.dark-mode header{
   background-color: var(--color-secundary);
   color: var(--color-bg);
 }
+.contenedorSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+ 
+}
+
+
+
+.producto-card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  width: 30%;
+  height: 25%;
+  margin: 20px;
+  padding: var(--spacing-md);
+  border-radius: 15px;
+  box-shadow: var(--shadow-lg);
+  flex: 4;
+  color: #1a1e30;
+}
+.icono{
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: #2a385c;
+padding: 3px;
+margin-top: 5px;
+width: 30px;
+height: 30px;
+border-radius: 5px;
+}
