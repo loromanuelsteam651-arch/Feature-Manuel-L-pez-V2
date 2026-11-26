@@ -1,17 +1,22 @@
-import {cheatsheets}  from "../DATA/cheatsheet"
+import { cheatsheets } from "../DATA/cheatsheet.js";
 
-export default  function cheatSheetList(){
- const contenedorCheatSheet = document.getElementById("CheatSheetDiv")
- const cheatsheetsHTML = cheatsheets.map((elemento) => {
-    return `
-     <article class="cheatsheet-card">
-        <a href="${elemento.link}"></a>
-        <img src="${elemento.icon}" alt="${elemento.name}">
-        <h3>${elemento.name}</h3>
-     </article>
-    `
+export default function cheatSheetList() {
+  const contenedorCheatSheet = document.getElementById("CheatSheetDiv");
+  if (contenedorCheatSheet) {
+    const cheatsheetsHTML = cheatsheets
+      .map((elemento) => {
+        return `
+          <article class="cheatsheet-card">
+            <a href="${elemento.link}" class="cheatsheet-btn">
+            <h3>${elemento.name}</h3>
+              <img src="${elemento.icon}" alt="${elemento.name}">
+              <p>Guía rápida de referencia</p>
+            </a>
+          </article>
+        `;
+      })
+      .join("");
 
- })
- .join("")
- contenedorCheatSheet.innerHTML = cheatsheetsHTML
+    contenedorCheatSheet.innerHTML = cheatsheetsHTML;
+  }
 }

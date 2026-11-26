@@ -30,7 +30,20 @@
 }   */
 
 /* .....................MENU DE NAVEGACIÓN................................................ */
+html,
+body {
+  min-height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
 header {
  position: sticky;
  top: 0;
@@ -169,7 +182,7 @@ body {
 }
 .img {
   width: 50%;
-  
+  margin-top: 30px;
   border-radius: 40px;
 }
 .divimg{
@@ -283,7 +296,9 @@ h1 {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
-
+.section{
+  margin-top: var(--spacing-lg);
+}
 .form{
   padding: 0 100px;
 }
@@ -529,15 +544,13 @@ body.dark-mode header{
   background-color: var(--color-secundary);
   color: var(--color-bg);
 }
+
 .contenedorSkills {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
  
 }
-
-
-
 .producto-card{
   display: flex;
   flex-direction: column;
@@ -561,4 +574,50 @@ margin-top: 5px;
 width: 30px;
 height: 30px;
 border-radius: 5px;
+}
+
+.CheatSheetDiv{
+  display: flex;
+  width: 30%;
+  height: auto;
+  flex-direction: row;
+  flex: 41;
+}
+.cheatsheet-card img{
+ width: 20%;
+  height: auto;
+}
+.cheatsheet-card{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    box-shadow: var(--shadow-lg);
+    width: 20%;
+    padding: var(--spacing-md);
+    border-radius: 30px;
+}
+.cheatsheet-btn{
+  display: flex;
+    flex-direction: column;
+     align-items: center;
+     margin: var(--spacing-md);
+}
+.cheatsheet-btn p{
+  margin-top: 10px;
+}
+.cheatsheet-btn h3{
+  margin-bottom: 10px;
+}
+#CheatSheetDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#CheatSheetDiv .cheatsheet-card {
+  flex: 2;
+}
+.producto-card.dark-mode{
+    background-color: var(--color-secundary);
+  color: var(--color-bg);
 }
